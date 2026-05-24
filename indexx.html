@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adiya Orazbek — Portfolio</title>
+
+<style>
+:root {
+    --bg: #0b0f17;
+    --card: rgba(18, 24, 36, 0.75);
+    --text: #e5e7eb;
+    --muted: #94a3b8;
+    --accent: #6366f1;
+    --accent2: #22d3ee;
+    --border: rgba(148,163,184,0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: radial-gradient(circle at top, #111827, var(--bg));
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 950px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.subtitle {
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: 1.1rem;
+}
+
+.tags {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tag {
+    padding: 6px 12px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+/* SECTION */
+.section {
+    margin-top: 50px;
+}
+
+.section h2 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--muted);
+}
+
+/* CARD */
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 18px;
+    backdrop-filter: blur(10px);
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.small {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    border-radius: 999px;
+    background: rgba(99,102,241,0.15);
+    color: var(--accent);
+    margin-left: 8px;
+}
+
+ul {
+    margin-top: 10px;
+    padding-left: 18px;
+}
+
+li {
+    margin-bottom: 8px;
+    color: var(--muted);
+}
+
+.highlight {
+    color: var(--text);
+    font-weight: 500;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    h1 {
+        font-size: 2.3rem;
+    }
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+    <h1>Adiya Orazbek</h1>
+    <div class="subtitle">
+        Student builder exploring biology, robotics, and educational technology
+    </div>
+
+    <div class="tags">
+        <div class="tag">16 years old</div>
+        <div class="tag">NIS PhM Almaty</div>
+        <div class="tag">GPA 3.8/4.0</div>
+        <div class="tag">English B2–C1</div>
+        <div class="tag">FTC Robotics</div>
+    </div>
+</header>
+
+<!-- ROBOTICS -->
+<div class="section">
+<h2>Robotics & Leadership</h2>
+
+<div class="card">
+<h3>FTC Team MLP #19163 <span class="badge">Engineering</span></h3>
+<div class="small">FIRST Tech Challenge — Houston Finalist</div>
+
+<ul>
+    <li>Helped design and build FTC robot mechanisms as part of the engineering team.</li>
+    <li>Team reached <span class="highlight">Houston World Championship Finalist level</span>.</li>
+    <li>National Championship: Alliance Captain finalist team.</li>
+</ul>
+
+<ul>
+    <li><span class="highlight">World Projects Competition:</span> helped organize international event with 200+ participants from 6 countries.</li>
+    <li>Built a Telegram system connecting 40+ FTC teams across 7 countries for collaboration.</li>
+</ul>
+</div>
+</div>
+
+<!-- EDTECH -->
+<div class="section">
+<h2>Education & Entrepreneurship</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>@genomind.lab</h3>
+<div class="small">Science education platform</div>
+<p class="small">
+Built educational content focused on biology and exam preparation for students.
+</p>
+</div>
+
+<div class="card">
+<h3>Biology Learning Program</h3>
+<div class="small">UNIFIED TEST PREP</div>
+<p>
+Created structured biology program for grades 7–11 with <span class="highlight">100+ students enrolled</span>.
+</p>
+</div>
+
+</div>
+</div>
+
+<!-- RESEARCH -->
+<div class="section">
+<h2>Research & Programs</h2>
+
+<div class="card">
+<h3>Lab Assistant</h3>
+<div class="small">Combustion Problems Laboratory, Almaty</div>
+
+<ul>
+    <li>Assisted in experimental research and data collection.</li>
+    <li>Worked with academic testing and lab documentation processes.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Selective Programs <span class="badge">2026</span></h3>
+
+<ul>
+    <li>Kode With Klossy — software engineering program</li>
+    <li>Girls Who Code — global tech education track</li>
+</ul>
+</div>
+
+</div>
+
+<!-- SKILLS -->
+<div class="section">
+<h2>Skills & Activities</h2>
+
+<div class="card">
+<div class="grid">
+    <div>
+        <h3>Technical Skills</h3>
+        <ul>
+            <li>Python (basic–intermediate)</li>
+            <li>C++ (basic)</li>
+            <li>HTML / CSS</li>
+            <li>FTC robotics systems</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Community Work</h3>
+        <ul>
+            <li>Volunteer projects in local community</li>
+            <li>Eco-cleanup initiatives</li>
+            <li>School and regional event organization</li>
+        </ul>
+    </div>
+</div>
+</div>
+
+</div>
+
+<footer>
+Built and designed by Adiya Orazbek
+</footer>
+
+</div>
+
+</body>
+</html>
